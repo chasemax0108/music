@@ -1,0 +1,233 @@
+/*404040, e9e3e6, 2f97c1, 32965d*/
+/* Font names: 'Noto Sans', sans-serif 'Source Sans Pro', sans-serif */
+
+/*******************************General Styles
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f97c1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%232f97c1'/%3E%3Cstop offset='1' stop-color='%23e9e3e6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(258,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2332965d' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2332965d' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(360,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2332965d' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2332965d' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.36'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'Noto Sans', sans-serif;*/
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.color-green {
+    background-color: #32965d;
+}
+
+.color-blue {
+    background-color: #2f97c1;
+    color: #e9e3e6;
+}
+
+.color-white {
+    background-color: #e9e3e6;
+    color: #404040;
+}
+
+.color-black {
+    background-color: #404040;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px #404040 solid;
+}
+
+/**********************************play.html
+*/
+
+.filter-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.filter-group h3, .filter-group h4 {
+    width: 25%;
+}
+
+.filter-group h4:hover {
+    background-color: #32965d;
+}
+
+.music-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.music-queue {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.song-item, .queue-item {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px #404040 solid;
+}
+
+.album-cover {
+    width: 25%;
+}
+
+.album-cover img {
+    width: 100%;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 45%;
+}
+
+.song-info h3, .song-info h4, .song-info h5 {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    padding-left: 20px;
+}
+
+.controls img {
+    width: 50px;
+    height: 50px;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#player-album {
+    width: 25%;
+    padding-left: 10px;
+}
+
+#player-controls {
+    width: 30%;
+}
+
+/*********************** RESPONSIVE DESIGN
+*/
+
+@media only screen and (max-width: 500px) {
+    .music-queue {
+        order: -1;
+    }
+
+    h3, h4, h5, h6 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 959px) and (min-width: 500px) {
+    .music-queue {
+        order: -1;
+    }
+    
+    .page {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .page {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .music-content {
+        width: 50%;
+        margin-left: 0;
+    }
+    .filter-bar {
+        width: 30%;
+    }
+    .music-queue {
+        width: 20%;
+        margin-left: 0;
+    }
+    
+    .controls img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .music-content .album-cover {
+        width: 10%;
+    }
+    .song-info {
+        width: 60%;
+    }
+}
