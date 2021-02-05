@@ -20,7 +20,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*font-family: 'Noto Sans', sans-serif;*/
     overflow: hidden;
     margin-bottom: 0;
 }
@@ -39,6 +38,14 @@ h4 {
 
 h5 {
     font-size: 12px;
+}
+
+a {
+    color: #2f97c1;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 footer {
@@ -65,6 +72,10 @@ footer {
     background-color: #404040;
 }
 
+.color-red {
+    background-color: #a52222;
+}
+
 .page-wrapper {
     display: flex;
     justify-content: center;
@@ -82,33 +93,6 @@ footer {
     text-align: center;
     padding: 20px;
     border-bottom: 2px #404040 solid;
-}
-
-/**********************************play.html
-*/
-
-.filter-bar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding-bottom: 10px;
-}
-
-.filter-group {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    padding-bottom: 0;
-    text-align: center;
-}
-
-.filter-group h3, .filter-group h4 {
-    width: 25%;
-}
-
-.filter-group h4:hover {
-    background-color: #32965d;
 }
 
 .music-content {
@@ -179,26 +163,163 @@ footer {
     width: 30%;
 }
 
+/**********************************login.html
+*/
+
+.float-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+
+.input-field {
+    margin: 10px;
+}
+
+.custom-button {
+    padding: 10px;
+    margin: 10px 0;
+    color: #e9e3e6;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.custom-button:hover {
+    background-color: #2f97c1;
+}
+
+/**********************************settings.html
+*/
+
+.setting-box {
+    width: 50%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px #404040 solid;
+    text-align: center;
+}
+
+.setting .custom-button {
+    width: 20%;
+}
+
+.setting p {
+    margin-bottom: -4px;
+}
+
+.setting h3 {
+    width: 20%;
+}
+
+/**********************************organize.html
+*/
+
+.playlist-content {
+    width: 100%;
+    margin: 20px;
+}
+
+.playlist {
+    padding: 0 20px;
+    border-bottom: 2px #404040 solid;
+    width: 100%;
+}
+
+.playlist:hover {
+    background-color: #adacad;
+}
+
+.playlist p {
+    padding-top: 15px;
+}
+
+/**********************************explore.html
+*/
+
+.filter-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.filter-group h3, .filter-group h4 {
+    width: 25%;
+}
+
+.filter-group h4:hover {
+    background-color: #32965d;
+}
+
 /*********************** RESPONSIVE DESIGN
 */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 960px) {
     .music-queue {
         order: -1;
     }
+
+    .setting {
+        flex-direction: column;
+    }
+
+    .setting .custom-button, .setting-box .custom-button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .setting h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .setting-box {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
 
     h3, h4, h5, h6 {
         font-size: 20px;
     }
+
+    .setting-box {
+        width: 80%;
+    }
+
+    .float-box {
+        margin-top: 50px;
+    }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 500px) {
-    .music-queue {
-        order: -1;
-    }
     
     .page {
         width: 500px;
+    }
+
+    .float-box {
+        margin-top: 50px;
     }
 }
 
@@ -209,11 +330,13 @@ footer {
     }
     .music-content {
         width: 50%;
-        margin-left: 0;
     }
+
     .filter-bar {
         width: 30%;
+        margin-right: 0;
     }
+
     .music-queue {
         width: 20%;
         margin-left: 0;
@@ -229,5 +352,10 @@ footer {
     }
     .song-info {
         width: 60%;
+    }
+
+    .playlist-content {
+        margin-left: 0px;
+        width: 30%;
     }
 }

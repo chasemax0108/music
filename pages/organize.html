@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,11 +9,10 @@
         <link rel="stylesheet" href="../styles.css">
 
         <title>Sift - Music Finding Tool</title>
-
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark color-black">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="explore.html">
                 <img src="../images/logo.png" width="50px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,11 +20,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Explore</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="organize.html">Organize</a>
+                        <a class="nav-link" href="explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Organize</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="settings.html">Settings</a>
@@ -37,34 +35,12 @@
                 </ul>
             </div>
         </nav>
-        <div class="page-wrapper"> 
+
+        <div class="page-wrapper">
             <div class="page">
-                <div class="filter-bar color-white">
-                    <div class="section-title">
-                        <h2>Filters</h2>
-                    </div>
-                    <div class="filter-group">
-                        <h3>Tempo</h3>
-                        <h4 class="color-blue">80 BPM</h4>
-                        <h4 class="color-blue">110 BPM</h4>
-                        <h4 class="color-blue">130 BPM</h4>
-                    </div>
-                    <div class="filter-group">
-                        <h3>Energy</h3>
-                        <h4 class="color-blue">Chill</h4>
-                        <h4 class="color-blue">Medium</h4>
-                        <h4 class="color-blue">Party</h4>
-                    </div>
-                    <div class="filter-group">
-                        <h3>Emphasis</h3>
-                        <h4 class="color-blue">Beat</h4>
-                        <h4 class="color-blue">Lyrics</h4>
-                        <h4 class="color-blue">Instruments</h4>
-                    </div>
-                </div>
                 <div class="music-content color-white">
-                    <div class="section-title ">
-                        <h2>Browser</h2>
+                    <div class="section-title">
+                        <h2>Unsorted Music</h2>
                     </div>
                     <div class="song-item">
                         <div class="album-cover">
@@ -75,7 +51,6 @@
                             <h4>The Weeknd</h4>
                         </div>
                         <div class="controls">
-                            <img src="../images/add_button.png">
                             <img src="../images/play_button.png">
                         </div>
                     </div>
@@ -88,7 +63,6 @@
                             <h4>Porter Robinson</h4>
                         </div>
                         <div class="controls">
-                            <img src="../images/add_button.png">
                             <img src="../images/play_button.png">
                         </div>
                     </div>
@@ -101,7 +75,6 @@
                             <h4>3LAU</h4>
                         </div>
                         <div class="controls">
-                            <img src="../images/add_button.png">
                             <img src="../images/play_button.png">
                         </div>
                     </div>
@@ -114,48 +87,34 @@
                             <h4>070 Shake</h4>
                         </div>
                         <div class="controls">
-                            <img src="../images/add_button.png">
                             <img src="../images/play_button.png">
                         </div>
                     </div>
-                    <div class="song-item">
-                        <div class="album-cover">
-                            <img src="../images/oceans.png">
-                        </div>
-                        <div class="song-info">
-                            <h3>Oceans Away</h3>
-                            <h4>A R I Z O N A</h4>
-                        </div>
-                        <div class="controls">
-                            <img src="../images/add_button.png">
-                            <img src="../images/play_button.png">
-                        </div>
+                </div>
+                <div class="playlist-content color-white">
+                    <div class="section-title">
+                        <h2>Playlists</h2>
                     </div>
-                    <div class="song-item">
-                        <div class="album-cover">
-                            <img src="../images/worlds.png">
-                        </div>
-                        <div class="song-info">
-                            <h3>Lionhearted</h3>
-                            <h4>Porter Robinson</h4>
-                        </div>
-                        <div class="controls">
-                            <img src="../images/add_button.png">
-                            <img src="../images/play_button.png">
-                        </div>
+                    <div class="playlist">
+                        <p>Cool Tunes</p>
                     </div>
-                    <div class="song-item">
-                        <div class="album-cover">
-                            <img src="../images/18_months.png">
-                        </div>
-                        <div class="song-info">
-                            <h3>Feel So Close</h3>
-                            <h4>Calvin Harris</h4>
-                        </div>
-                        <div class="controls">
-                            <img src="../images/add_button.png">
-                            <img src="../images/play_button.png">
-                        </div>
+                    <div class="playlist">
+                        <p>80's vibes</p>
+                    </div>
+                    <div class="playlist">
+                        <p>Dance Floor</p>
+                    </div>
+                    <div class="playlist">
+                        <p>New Beats</p>
+                    </div>
+                    <div class="playlist">
+                        <p>Random Likes</p>
+                    </div>
+                    <div class="playlist">
+                        <p>My Favorites</p>
+                    </div>
+                    <div class="playlist">
+                        <p>For the nice long car ride</p>
                     </div>
                 </div>
                 <div class="music-queue color-white">
@@ -199,6 +158,7 @@
                 </div>
             </div>
         </div>
+
         <footer>
             Find the code for this page on <a href="https://github.com/chasemax0108/music">Github</a>
         </footer>
